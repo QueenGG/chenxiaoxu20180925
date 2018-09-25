@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bawei.chenxiaoxu.chenxiaoxu20180925.activity.ShowActivity">
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/xcart_list"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/asd"
+        android:layout_height="wrap_content">
+
+    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+    <RelativeLayout
+        android:id="@+id/asd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#BBBBBB"
+        android:layout_alignParentBottom="true">
+        <CheckBox
+            android:id="@+id/allCheck"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/toPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="总价：¥"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/allCheck"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ff00"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="去结算"
+            android:textSize="25dp"
+            android:textColor="#ffff"/>
+    </RelativeLayout>
+</RelativeLayout>

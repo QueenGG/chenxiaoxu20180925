@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.bawei.chenxiaoxu.chenxiaoxu20180925.activity.MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:orientation="horizontal">
+       <EditText
+           android:id="@+id/ed"
+           android:background="@drawable/shou_shape"
+           android:layout_width="0dp"
+           android:paddingLeft="15dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="8"/>
+       <Button
+           android:id="@+id/bt"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="2"
+           android:text="搜索"/>
+   </LinearLayout>
+    <Button
+        android:id="@+id/myview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="清除历史记录"/>
+    <com.bawei.chenxiaoxu.chenxiaoxu20180925.witget.CustomView
+        android:id="@+id/liu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </com.bawei.chenxiaoxu.chenxiaoxu20180925.witget.CustomView>
+
+
+</LinearLayout>
